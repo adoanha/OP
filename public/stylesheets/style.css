@@ -1,0 +1,50 @@
+/* LESSON LEARNED: MISPELLING */
+/* -Developer tools: ctrl + shift + i
+   -position: static, absolute, fixed, relative, sticky
+   -z-index: Used to bring an element to the foreground/background
+*/
+
+body, html {
+  height: 100%;
+  font-family: "Shadows Into Light", monospace;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-container {
+  position: static;
+  display: flex;
+  flex-direction: row; /* tabs for later */
+  height: 10%;
+  width: 100%;
+  background-color: orange;
+}
+
+.bg {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-image: url("https://images.hdqwalls.com/download/one-piece-anime-artwork-i6-1920x1080.jpg");
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.white-container {
+  position: relative;
+  background-color: rgb(255, 255, 255, 0.9);
+  height: 100%;
+  width: 80%;
+  margin: 0px 20px;
+  z-index: 2;
+}
+
+
