@@ -5,13 +5,25 @@
 */
 
 body, html {
-  height: 100%;
   font-family: "Shadows Into Light", monospace;
 }
 
-h1 {
-  font-size: 60px;
-  text-align: center;
+
+h2 {
+  font-size: 36px;
+  padding-left: 10px;
+}
+
+p {
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.large-image {
+  height: 50%;
+  width: 50%;
+  padding-left: 15%;
 }
 
 .wrapper {
@@ -19,13 +31,27 @@ h1 {
   flex-direction: column;
 }
 
+.header-container {
+  position: relative;
+  top: 2%; 
+}
+
+.header-text {
+  position: absolute;
+  bottom: -20%;
+  left: 20%; 
+}
+
 .title-container {
-  position: static;
-  display: flex;
-  flex-direction: row; /* tabs for later */
-  height: 10%;
-  width: 100%;
-  background-color: orange;
+  background-color: rgb(102, 196, 102);
+  font-size: 2vw;
+}
+
+.author-container {
+  background-color: black;
+  color: red;
+  width: 25%;
+  font-size: 1vw;
 }
 
 .bg {
@@ -40,7 +66,7 @@ h1 {
 
 .white-container {
   position: relative;
-  background-color: rgb(255, 255, 255, 0.9);
+  background-color: rgb(255, 255, 255, 0.95);
   height: 100%;
   width: 80%;
   margin: 0px 20px;
@@ -48,3 +74,7 @@ h1 {
 }
 
 
+.store-photo {
+  height: 128px;
+  width: 128px;
+}
